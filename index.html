@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXELATE TD - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .game-preview {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .game-preview img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .game-preview img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 2px;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-icon {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-details {
+            flex: 1;
+        }
+
+        .contact-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .contact-value a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-value a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .app-store-section {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        .app-store-section p {
+            margin-bottom: 15px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .store-badges {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .store-badge {
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .store-badge:hover {
+            transform: translateY(-3px);
+        }
+
+        .store-badge img {
+            height: 50px;
+            width: auto;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .language-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .language-btn {
+            padding: 8px 16px;
+            background: #f8f9fa;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .language-btn:hover {
+            background: #e9ecef;
+        }
+
+        .language-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .logo {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🏰</div>
+            <h1>PIXELATE TD</h1>
+            <div class="game-preview">
+                <img src="shot-compressed.png" alt="PIXELATE TD Game Screenshot">
+            </div>
+        </div>
+
+        <div class="language-selector">
+            <button class="language-btn active" onclick="switchLanguage('en')">English</button>
+            <button class="language-btn" onclick="switchLanguage('zh')">中文</button>
+            <button class="language-btn" onclick="switchLanguage('ja')">日本語</button>
+        </div>
+
+        <!-- English Content -->
+        <div class="content active" id="content-en">
+            <p class="subtitle">Need help? We're here to support you!</p>
+
+            <div class="section">
+                <div class="section-title">Contact Information</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <div class="contact-label">Email Support</div>
+                            <div class="contact-value">
+                                <a href="mailto:unayung@gmail.com">unayung@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <div class="contact-label">GitHub Issues</div>
+                            <div class="contact-value">
+                                <a href="https://github.com/unayung/pixelate-web/issues" target="_blank">Report a Bug</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-store-section">
+                <p>🎮 Download PIXELATE TD</p>
+                <div class="store-badges">
+                    <a href="https://apps.apple.com/app/6754314391" class="store-badge" target="_blank">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1234567890" alt="Download on the App Store">
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Quick Links</div>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://github.com/unayung/pixelate-web" class="btn" target="_blank">📚 Documentation</a>
+                    <a href="#faq" class="btn">❓ FAQ</a>
+                </div>
+            </div>
+
+            <div class="section" id="faq">
+                <div class="section-title">Frequently Asked Questions</div>
+                <div class="contact-info">
+                    <details style="margin-bottom: 15px;">
+                        <summary style="cursor: pointer; font-weight: 600; padding: 10px;">How do I play multiplayer?</summary>
+                        <p style="padding: 10px; color: #666;">Select "VS Mode" from the main menu, then choose to create a game or join an existing lobby.</p>
+                    </details>
+                    <details style="margin-bottom: 15px;">
+                        <summary style="cursor: pointer; font-weight: 600; padding: 10px;">What are mercenaries?</summary>
+                        <p style="padding: 10px; color: #666;">In VS Mode, you can send enemies to your opponent's castle by spending gold on mercenaries.</p>
+                    </details>
+                    <details>
+                        <summary style="cursor: pointer; font-weight: 600; padding: 10px;">How do tower upgrades work?</summary>
+                        <p style="padding: 10px; color: #666;">After each wave, choose from 3 random upgrade cards to enhance your towers, gain resources, or repair your castle.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>© 2024 PIXELATE TD. All rights reserved.</p>
+                <p style="margin-top: 8px;">Response time: Within 24-48 hours</p>
+            </div>
+        </div>
+
+        <!-- Chinese Content -->
+        <div class="content" id="content-zh">
+            <p class="subtitle">需要協助？我們隨時為您服務！</p>
+
+            <div class="section">
+                <div class="section-title">聯絡資訊</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <div class="contact-label">電子郵件支援</div>
+                            <div class="contact-value">
+                                <a href="mailto:unayung@gmail.com">unayung@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <div class="contact-label">GitHub 問題回報</div>
+                            <div class="contact-value">
+                                <a href="https://github.com/unayung/pixelate-web/issues" target="_blank">回報錯誤</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-store-section">
+                <p>🎮 下載 PIXELATE TD</p>
+                <div class="store-badges">
+                    <a href="https://apps.apple.com/app/6754314391" class="store-badge" target="_blank">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-tw?size=250x83&amp;releaseDate=1234567890" alt="下載於 App Store">
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">快速連結</div>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://github.com/unayung/pixelate-web" class="btn" target="_blank">📚 使用文件</a>
+                    <a href="#faq-zh" class="btn">❓ 常見問題</a>
+                </div>
+            </div>
+
+            <div class="section" id="faq-zh">
+                <div class="section-title">常見問題</div>
+                <div class="contact-info">
+                    <details style="margin-bottom: 15px;">
+                        <summary style="cursor: pointer; font-weight: 600; padding: 10px;">如何進行多人對戰？</summary>
+                        <p style="padding: 10px; color: #666;">從主選單選擇「對戰模式」，然後選擇創建遊戲或加入現有大廳。</p>
+                    </details>
+                    <details style="margin-bottom: 15px;">
+                        <summary style="cursor: pointer; font-weight: 600; padding: 10px;">什麼是傭兵？</summary>
+                        <p style="padding: 10px; color: #666;">在對戰模式中，你可以花費金幣派遣傭兵（敵人）到對手的城堡。</p>
+                    </details>
+                    <details>
+                        <summary style="cursor: pointer; font-weight: 600; padding: 10px;">防禦塔升級如何運作？</summary>
+                        <p style="padding: 10px; color: #666;">每波結束後，從3張隨機升級卡中選擇，可強化防禦塔、獲得資源或修復城堡。</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>© 2024 PIXELATE TD. 版權所有。</p>
+                <p style="margin-top: 8px;">回覆時間：24-48小時內</p>
+            </div>
+        </div>
+
+        <!-- Japanese Content -->
+        <div class="content" id="content-ja">
+            <p class="subtitle">お困りですか？サポートいたします！</p>
+
+            <div class="section">
+                <div class="section-title">お問い合わせ</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <div class="contact-label">メールサポート</div>
+                            <div class="contact-value">
+                                <a href="mailto:unayung@gmail.com">unayung@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <div class="contact-label">GitHub Issues</div>
+                            <div class="contact-value">
+                                <a href="https://github.com/unayung/pixelate-web/issues" target="_blank">バグを報告</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-store-section">
+                <p>🎮 PIXELATE TD をダウンロード</p>
+                <div class="store-badges">
+                    <a href="https://apps.apple.com/app/6754314391" class="store-badge" target="_blank">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83&amp;releaseDate=1234567890" alt="App Store でダウンロード">
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">クイックリンク</div>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://github.com/unayung/pixelate-web" class="btn" target="_blank">📚 ドキュメント</a>
+                    <a href="#faq-ja" class="btn">❓ よくある質問</a>
+                </div>
+            </div>
+
+            <div class="section" id="faq-ja">
+                <div class="section-title">よくある質問</div>
+                <div class="contact-info">
+                    <details style="margin-bottom: 15px;">
+                        <summary style="cursor: pointer; font-weight: 600; padding: 10px;">マルチプレイの遊び方は？</summary>
+                        <p style="padding: 10px; color: #666;">メインメニューから「対戦モード」を選択し、ゲームを作成するか既存のロビーに参加してください。</p>
+                    </details>
+                    <details style="margin-bottom: 15px;">
+                        <summary style="cursor: pointer; font-weight: 600; padding: 10px;">傭兵とは何ですか？</summary>
+                        <p style="padding: 10px; color: #666;">対戦モードでは、ゴールドを使って相手の城に敵（傭兵）を送ることができます。</p>
+                    </details>
+                    <details>
+                        <summary style="cursor: pointer; font-weight: 600; padding: 10px;">タワーのアップグレードは？</summary>
+                        <p style="padding: 10px; color: #666;">各ウェーブ後、3枚のランダムなアップグレードカードから選択し、タワーの強化、資源の獲得、城の修理ができます。</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>© 2024 PIXELATE TD. All rights reserved.</p>
+                <p style="margin-top: 8px;">返信時間：24〜48時間以内</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.content').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected content
+            document.getElementById('content-' + lang).classList.add('active');
+
+            // Activate selected button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
