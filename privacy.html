@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PIXELATE TD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .language-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .language-btn {
+            padding: 8px 16px;
+            background: #f8f9fa;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .language-btn:hover {
+            background: #e9ecef;
+        }
+
+        .language-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box h3 {
+            margin-top: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .logo {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🏰</div>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: October 23, 2024</p>
+        </div>
+
+        <div class="language-selector">
+            <button class="language-btn active" onclick="switchLanguage('en')">English</button>
+            <button class="language-btn" onclick="switchLanguage('zh')">中文</button>
+            <button class="language-btn" onclick="switchLanguage('ja')">日本語</button>
+        </div>
+
+        <!-- English Content -->
+        <div class="content active" id="content-en">
+            <div class="highlight-box">
+                <h3>🎮 Privacy First</h3>
+                <p><strong>PIXELATE TD is committed to protecting your privacy. We collect minimal data necessary for gameplay and never sell or share your personal information with third parties.</strong></p>
+            </div>
+
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Data We DO NOT Collect</h3>
+            <p>PIXELATE TD does not collect:</p>
+            <ul>
+                <li>Personal identification information (name, email, phone number)</li>
+                <li>Location data or GPS coordinates</li>
+                <li>Photos, camera, or microphone access</li>
+                <li>Contact list or address book</li>
+                <li>Payment information (the game is completely free)</li>
+                <li>Social media profiles or login credentials</li>
+            </ul>
+
+            <h3>1.2 Data We Collect for Gameplay</h3>
+            <p>To provide multiplayer functionality, we temporarily store:</p>
+            <ul>
+                <li><strong>Session Data:</strong> Temporary connection identifiers for multiplayer matches</li>
+                <li><strong>Game State:</strong> Tower positions, wave progress, and gold amounts during active matches</li>
+                <li><strong>Match Information:</strong> Player numbers (Player 1 or Player 2) and match status</li>
+            </ul>
+            <p><em>This data is stored in memory only during active gameplay and is automatically deleted when matches end.</em></p>
+
+            <h3>1.3 Technical Data</h3>
+            <ul>
+                <li><strong>Device Information:</strong> Device type and OS version for compatibility</li>
+                <li><strong>Game Performance:</strong> Crash reports and error logs to improve stability</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>The limited data we collect is used exclusively to:</p>
+            <ul>
+                <li>Enable real-time multiplayer matches between players</li>
+                <li>Synchronize game state during VS mode</li>
+                <li>Ensure fair gameplay and prevent cheating</li>
+                <li>Fix bugs and improve game performance</li>
+                <li>Provide technical support when you contact us</li>
+            </ul>
+
+            <h2>3. Multiplayer & Network Communications</h2>
+
+            <h3>3.1 Server Connection</h3>
+            <p>When you play VS Mode, the game connects to our multiplayer server hosted on Render.com at:</p>
+            <p><code>https://pixelate-48p5.onrender.com</code></p>
+
+            <h3>3.2 Data Transmission</h3>
+            <ul>
+                <li>All multiplayer data is transmitted over secure HTTPS/WSS connections</li>
+                <li>Data is encrypted in transit using industry-standard TLS/SSL protocols</li>
+                <li>No persistent player profiles or accounts are created</li>
+                <li>Match data is deleted immediately after games end</li>
+            </ul>
+
+            <h3>3.3 Lobby System</h3>
+            <p>When creating or joining multiplayer lobbies:</p>
+            <ul>
+                <li>Optional player names are stored temporarily (only during the match)</li>
+                <li>Lobby codes are randomly generated and expire after use</li>
+                <li>No chat history or messages are stored</li>
+            </ul>
+
+            <h2>4. Data Storage & Retention</h2>
+
+            <h3>4.1 Server Storage</h3>
+            <ul>
+                <li><strong>Active Matches:</strong> Data stored in server memory during gameplay</li>
+                <li><strong>Retention Period:</strong> Automatically deleted when matches end or players disconnect</li>
+                <li><strong>No Long-term Storage:</strong> We do not maintain databases of player information</li>
+            </ul>
+
+            <h3>4.2 Local Storage</h3>
+            <ul>
+                <li><strong>Game Settings:</strong> Sound preferences, language selection stored locally on your device</li>
+                <li><strong>Single-Player Progress:</strong> High scores and wave records stored locally</li>
+                <li><strong>Your Control:</strong> Can be cleared by deleting the app</li>
+            </ul>
+
+            <h2>5. Third-Party Services</h2>
+
+            <h3>5.1 Hosting Provider</h3>
+            <p><strong>Render.com</strong> - Our multiplayer server is hosted on Render's infrastructure.</p>
+            <ul>
+                <li>Purpose: Provide multiplayer game server hosting</li>
+                <li>Data Shared: Temporary match data and connection information</li>
+                <li>Privacy Policy: <a href="https://render.com/privacy" target="_blank">https://render.com/privacy</a></li>
+            </ul>
+
+            <h3>5.2 Advertising (Android Only)</h3>
+            <p><strong>Android Version:</strong></p>
+            <p>The Android version of PIXELATE TD uses Google AdMob to display advertisements. AdMob may collect:</p>
+            <ul>
+                <li>Advertising ID for personalized ads</li>
+                <li>Device information (model, OS version)</li>
+                <li>App usage data for ad performance</li>
+                <li>IP address for general location (country/region level)</li>
+            </ul>
+            <p><strong>Your Choices:</strong></p>
+            <ul>
+                <li>Opt out of personalized ads in Android Settings → Google → Ads</li>
+                <li>AdMob Privacy Policy: <a href="https://support.google.com/admob/answer/6128543" target="_blank">https://support.google.com/admob/answer/6128543</a></li>
+            </ul>
+
+            <p><strong>iOS/Desktop Versions:</strong></p>
+            <p>iOS and Desktop (Electron) versions are completely ad-free and do not use any advertising services.</p>
+
+            <h3>5.3 No Additional Analytics</h3>
+            <p><strong>We do NOT use:</strong></p>
+            <ul>
+                <li>Google Analytics, Firebase Analytics, or similar tracking services</li>
+                <li>Social media SDKs or sharing tools</li>
+                <li>Crash reporting services that collect personal data</li>
+            </ul>
+
+            <h2>6. Children's Privacy</h2>
+            <p>PIXELATE TD is suitable for all ages. We do not knowingly collect personal information from children under 13. The game:</p>
+            <ul>
+                <li>Does not require account creation or age verification</li>
+                <li>Contains no in-app purchases or payment methods</li>
+                <li>Has no chat features or user-generated content</li>
+                <li><strong>Android:</strong> Displays age-appropriate ads via AdMob (compliant with COPPA)</li>
+                <li><strong>iOS/Desktop:</strong> Completely ad-free</li>
+            </ul>
+            <p><strong>For Parents:</strong></p>
+            <ul>
+                <li>AdMob serves only family-friendly ads on Android</li>
+                <li>You can disable personalized ads in device settings</li>
+                <li>iOS and Desktop versions have no ads at all</li>
+            </ul>
+
+            <h2>7. Your Rights & Choices</h2>
+
+            <h3>7.1 Data Access</h3>
+            <p>Since we collect minimal temporary data, there is no persistent user profile to access or export.</p>
+
+            <h3>7.2 Data Deletion</h3>
+            <ul>
+                <li>Active match data: Automatically deleted when matches end</li>
+                <li>Local settings: Delete by removing the app from your device</li>
+                <li>No account deletion needed (no accounts are created)</li>
+            </ul>
+
+            <h3>7.3 Opt-Out Options</h3>
+            <ul>
+                <li><strong>Multiplayer:</strong> Simply play Solo Mode to avoid any network connections</li>
+                <li><strong>Crash Reports:</strong> Disable in device settings (iOS: Settings → Privacy → Analytics)</li>
+            </ul>
+
+            <h2>8. Security Measures</h2>
+            <p>We protect your data through:</p>
+            <ul>
+                <li>Encrypted network communications (HTTPS/WSS)</li>
+                <li>Secure server infrastructure with regular updates</li>
+                <li>Minimal data collection philosophy</li>
+                <li>Automatic deletion of temporary match data</li>
+                <li>No long-term storage of personal information</li>
+            </ul>
+
+            <h2>9. International Users</h2>
+            <p>PIXELATE TD is available worldwide. Our servers are located in the United States, but:</p>
+            <ul>
+                <li>We comply with GDPR (Europe), CCPA (California), and similar privacy laws</li>
+                <li>Minimal data means minimal compliance concerns</li>
+                <li>No cross-border data transfers of personal information</li>
+            </ul>
+
+            <h2>10. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy to reflect:</p>
+            <ul>
+                <li>Changes in game features or functionality</li>
+                <li>Updates to privacy laws or regulations</li>
+                <li>Improvements to our data protection practices</li>
+            </ul>
+            <p>Material changes will be communicated through:</p>
+            <ul>
+                <li>In-app notifications</li>
+                <li>Updates to this page with a new "Last Updated" date</li>
+            </ul>
+
+            <h2>11. Contact Us</h2>
+            <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:unayung@gmail.com">unayung@gmail.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/unayung/pixelate-web/issues" target="_blank">Report an Issue</a></li>
+                <li><strong>Support Page:</strong> <a href="index.html">Support & FAQ</a></li>
+            </ul>
+
+            <div class="highlight-box" style="margin-top: 30px;">
+                <h3>📋 Summary</h3>
+                <p><strong>In Plain Language:</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li>We collect almost no personal data</li>
+                    <li>Multiplayer data is temporary and deleted after matches</li>
+                    <li><strong>Android:</strong> Shows ads via AdMob (you can opt out of personalized ads)</li>
+                    <li><strong>iOS/Desktop:</strong> Completely ad-free</li>
+                    <li>No selling of your data to third parties</li>
+                    <li>Your game settings stay on your device</li>
+                    <li>Safe for all ages including children</li>
+                    <li>You can play offline in Solo Mode for complete privacy</li>
+                </ul>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="back-link">← Back to Support</a>
+            </div>
+        </div>
+
+        <!-- Chinese Content -->
+        <div class="content" id="content-zh">
+            <div class="highlight-box">
+                <h3>🎮 隱私優先</h3>
+                <p><strong>PIXELATE TD 致力於保護您的隱私。我們僅收集遊戲所需的最少數據，絕不會將您的個人資訊出售或分享給第三方。</strong></p>
+            </div>
+
+            <h2>1. 我們收集的資訊</h2>
+
+            <h3>1.1 我們不收集的數據</h3>
+            <p>PIXELATE TD 不收集：</p>
+            <ul>
+                <li>個人識別資訊（姓名、電子郵件、電話號碼）</li>
+                <li>位置數據或 GPS 座標</li>
+                <li>照片、相機或麥克風存取</li>
+                <li>聯絡人列表或通訊錄</li>
+                <li>付款資訊（遊戲完全免費）</li>
+                <li>社交媒體個人檔案或登入憑證</li>
+            </ul>
+
+            <h3>1.2 遊戲所需的數據</h3>
+            <p>為提供多人遊戲功能，我們暫時儲存：</p>
+            <ul>
+                <li><strong>會話數據：</strong>多人對戰的臨時連線識別碼</li>
+                <li><strong>遊戲狀態：</strong>進行中對戰的防禦塔位置、波次進度和金幣數量</li>
+                <li><strong>對戰資訊：</strong>玩家編號（玩家1或玩家2）和對戰狀態</li>
+            </ul>
+            <p><em>此數據僅在遊戲進行期間儲存於記憶體中，對戰結束後會自動刪除。</em></p>
+
+            <h3>1.3 技術數據</h3>
+            <ul>
+                <li><strong>設備資訊：</strong>設備類型和作業系統版本，用於相容性</li>
+                <li><strong>遊戲效能：</strong>崩潰報告和錯誤日誌，以改善穩定性</li>
+            </ul>
+
+            <h2>2. 我們如何使用您的資訊</h2>
+            <p>我們收集的有限數據僅用於：</p>
+            <ul>
+                <li>實現玩家之間的即時多人對戰</li>
+                <li>在對戰模式中同步遊戲狀態</li>
+                <li>確保公平遊戲並防止作弊</li>
+                <li>修復錯誤並改善遊戲效能</li>
+                <li>在您聯繫我們時提供技術支援</li>
+            </ul>
+
+            <h2>3. 多人遊戲與網路通訊</h2>
+
+            <h3>3.1 伺服器連接</h3>
+            <p>當您遊玩對戰模式時，遊戲會連接到我們託管於 Render.com 的多人伺服器：</p>
+            <p><code>https://pixelate-48p5.onrender.com</code></p>
+
+            <h3>3.2 數據傳輸</h3>
+            <ul>
+                <li>所有多人數據透過安全的 HTTPS/WSS 連接傳輸</li>
+                <li>數據在傳輸過程中使用業界標準的 TLS/SSL 協定加密</li>
+                <li>不會建立持久性的玩家個人檔案或帳戶</li>
+                <li>對戰數據在遊戲結束後立即刪除</li>
+            </ul>
+
+            <h3>3.3 大廳系統</h3>
+            <p>建立或加入多人大廳時：</p>
+            <ul>
+                <li>可選的玩家名稱僅暫時儲存（僅在對戰期間）</li>
+                <li>大廳代碼隨機產生，使用後過期</li>
+                <li>不儲存聊天記錄或訊息</li>
+            </ul>
+
+            <h2>4. 數據儲存與保留</h2>
+
+            <h3>4.1 伺服器儲存</h3>
+            <ul>
+                <li><strong>進行中的對戰：</strong>數據在遊戲進行期間儲存於伺服器記憶體</li>
+                <li><strong>保留期限：</strong>對戰結束或玩家斷線時自動刪除</li>
+                <li><strong>無長期儲存：</strong>我們不維護玩家資訊資料庫</li>
+            </ul>
+
+            <h3>4.2 本地儲存</h3>
+            <ul>
+                <li><strong>遊戲設定：</strong>音效偏好、語言選擇儲存在您的設備本地</li>
+                <li><strong>單人進度：</strong>最高分數和波次記錄儲存在本地</li>
+                <li><strong>您的控制：</strong>可透過刪除應用程式清除</li>
+            </ul>
+
+            <h2>5. 第三方服務</h2>
+
+            <h3>5.1 託管服務商</h3>
+            <p><strong>Render.com</strong> - 我們的多人伺服器託管於 Render 的基礎設施。</p>
+            <ul>
+                <li>目的：提供多人遊戲伺服器託管</li>
+                <li>共享數據：臨時對戰數據和連接資訊</li>
+                <li>隱私政策：<a href="https://render.com/privacy" target="_blank">https://render.com/privacy</a></li>
+            </ul>
+
+            <h3>5.2 廣告（僅限 Android）</h3>
+            <p><strong>Android 版本：</strong></p>
+            <p>PIXELATE TD 的 Android 版本使用 Google AdMob 顯示廣告。AdMob 可能會收集：</p>
+            <ul>
+                <li>用於個人化廣告的廣告 ID</li>
+                <li>設備資訊（型號、作業系統版本）</li>
+                <li>用於廣告效能的應用程式使用數據</li>
+                <li>用於一般位置（國家/地區層級）的 IP 位址</li>
+            </ul>
+            <p><strong>您的選擇：</strong></p>
+            <ul>
+                <li>在 Android 設定 → Google → 廣告 中選擇退出個人化廣告</li>
+                <li>AdMob 隱私政策：<a href="https://support.google.com/admob/answer/6128543" target="_blank">https://support.google.com/admob/answer/6128543</a></li>
+            </ul>
+
+            <p><strong>iOS/桌面版本：</strong></p>
+            <p>iOS 和桌面（Electron）版本完全無廣告，不使用任何廣告服務。</p>
+
+            <h3>5.3 無其他分析</h3>
+            <p><strong>我們不使用：</strong></p>
+            <ul>
+                <li>Google Analytics、Firebase Analytics 或類似追蹤服務</li>
+                <li>社交媒體 SDK 或分享工具</li>
+                <li>收集個人數據的崩潰報告服務</li>
+            </ul>
+
+            <h2>6. 兒童隱私</h2>
+            <p>PIXELATE TD 適合所有年齡層。我們不會故意收集 13 歲以下兒童的個人資訊。本遊戲：</p>
+            <ul>
+                <li>不需要建立帳戶或年齡驗證</li>
+                <li>不包含應用程式內購買或付款方式</li>
+                <li>沒有聊天功能或使用者生成內容</li>
+                <li><strong>Android：</strong>透過 AdMob 顯示適齡廣告（符合 COPPA 規定）</li>
+                <li><strong>iOS/桌面：</strong>完全無廣告</li>
+            </ul>
+            <p><strong>給家長的資訊：</strong></p>
+            <ul>
+                <li>AdMob 在 Android 上僅提供適合家庭的廣告</li>
+                <li>您可以在設備設定中停用個人化廣告</li>
+                <li>iOS 和桌面版本完全無廣告</li>
+            </ul>
+
+            <h2>7. 您的權利與選擇</h2>
+
+            <h3>7.1 數據存取</h3>
+            <p>由於我們收集的臨時數據極少，沒有持久性使用者個人檔案可供存取或匯出。</p>
+
+            <h3>7.2 數據刪除</h3>
+            <ul>
+                <li>進行中的對戰數據：對戰結束時自動刪除</li>
+                <li>本地設定：透過從設備移除應用程式刪除</li>
+                <li>無需刪除帳戶（不會建立帳戶）</li>
+            </ul>
+
+            <h3>7.3 選擇退出選項</h3>
+            <ul>
+                <li><strong>多人遊戲：</strong>遊玩單人模式即可避免任何網路連接</li>
+                <li><strong>崩潰報告：</strong>在設備設定中停用（iOS：設定 → 隱私權 → 分析與改進功能）</li>
+            </ul>
+
+            <h2>8. 安全措施</h2>
+            <p>我們透過以下方式保護您的數據：</p>
+            <ul>
+                <li>加密網路通訊（HTTPS/WSS）</li>
+                <li>定期更新的安全伺服器基礎設施</li>
+                <li>最小化數據收集理念</li>
+                <li>自動刪除臨時對戰數據</li>
+                <li>不長期儲存個人資訊</li>
+            </ul>
+
+            <h2>9. 國際使用者</h2>
+            <p>PIXELATE TD 在全球提供服務。我們的伺服器位於美國，但是：</p>
+            <ul>
+                <li>我們遵守 GDPR（歐洲）、CCPA（加州）及類似隱私法規</li>
+                <li>最少數據意味著最少合規問題</li>
+                <li>無個人資訊的跨境數據傳輸</li>
+            </ul>
+
+            <h2>10. 本政策的變更</h2>
+            <p>我們可能會更新本隱私政策以反映：</p>
+            <ul>
+                <li>遊戲功能的變化</li>
+                <li>隱私法規的更新</li>
+                <li>數據保護實踐的改進</li>
+            </ul>
+            <p>重大變更將透過以下方式通知：</p>
+            <ul>
+                <li>應用程式內通知</li>
+                <li>更新本頁面並註明新的「最後更新」日期</li>
+            </ul>
+
+            <h2>11. 聯絡我們</h2>
+            <p>如果您對本隱私政策有疑問或疑慮，請聯繫我們：</p>
+            <ul>
+                <li><strong>電子郵件：</strong> <a href="mailto:unayung@gmail.com">unayung@gmail.com</a></li>
+                <li><strong>GitHub：</strong> <a href="https://github.com/unayung/pixelate-web/issues" target="_blank">回報問題</a></li>
+                <li><strong>支援頁面：</strong> <a href="index.html">支援與常見問題</a></li>
+            </ul>
+
+            <div class="highlight-box" style="margin-top: 30px;">
+                <h3>📋 摘要</h3>
+                <p><strong>簡單來說：</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li>我們幾乎不收集個人數據</li>
+                    <li>多人數據是臨時的，對戰後刪除</li>
+                    <li><strong>Android：</strong>透過 AdMob 顯示廣告（可選擇退出個人化廣告）</li>
+                    <li><strong>iOS/桌面：</strong>完全無廣告</li>
+                    <li>不向第三方販售您的數據</li>
+                    <li>您的遊戲設定保留在您的設備上</li>
+                    <li>適合所有年齡，包括兒童</li>
+                    <li>您可以在單人模式下遊玩以獲得完全隱私</li>
+                </ul>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="back-link">← 返回支援頁面</a>
+            </div>
+        </div>
+
+        <!-- Japanese Content -->
+        <div class="content" id="content-ja">
+            <div class="highlight-box">
+                <h3>🎮 プライバシー第一</h3>
+                <p><strong>PIXELATE TDは、お客様のプライバシー保護に取り組んでいます。ゲームプレイに必要な最小限のデータのみを収集し、個人情報を第三者に販売または共有することは決してありません。</strong></p>
+            </div>
+
+            <h2>1. 収集する情報</h2>
+
+            <h3>1.1 収集しないデータ</h3>
+            <p>PIXELATE TDは以下を収集しません：</p>
+            <ul>
+                <li>個人識別情報（氏名、メールアドレス、電話番号）</li>
+                <li>位置情報やGPS座標</li>
+                <li>写真、カメラ、マイクへのアクセス</li>
+                <li>連絡先リストやアドレス帳</li>
+                <li>支払い情報（ゲームは完全無料です）</li>
+                <li>ソーシャルメディアのプロフィールやログイン認証情報</li>
+            </ul>
+
+            <h3>1.2 ゲームプレイに必要なデータ</h3>
+            <p>マルチプレイヤー機能を提供するため、一時的に保存します：</p>
+            <ul>
+                <li><strong>セッションデータ：</strong>マルチプレイヤーマッチの一時的な接続識別子</li>
+                <li><strong>ゲーム状態：</strong>進行中のマッチにおけるタワーの位置、ウェーブの進行状況、ゴールド量</li>
+                <li><strong>マッチ情報：</strong>プレイヤー番号（プレイヤー1またはプレイヤー2）とマッチステータス</li>
+            </ul>
+            <p><em>このデータはゲームプレイ中のみメモリに保存され、マッチ終了時に自動的に削除されます。</em></p>
+
+            <h3>1.3 技術データ</h3>
+            <ul>
+                <li><strong>デバイス情報：</strong>互換性のためのデバイスタイプとOSバージョン</li>
+                <li><strong>ゲームパフォーマンス：</strong>安定性向上のためのクラッシュレポートとエラーログ</li>
+            </ul>
+
+            <h2>2. 情報の使用方法</h2>
+            <p>収集する限られたデータは、以下の目的でのみ使用されます：</p>
+            <ul>
+                <li>プレイヤー間のリアルタイムマルチプレイヤーマッチを可能にする</li>
+                <li>対戦モード中のゲーム状態を同期する</li>
+                <li>公平なゲームプレイを確保し、不正行為を防止する</li>
+                <li>バグを修正し、ゲームのパフォーマンスを向上させる</li>
+                <li>お問い合わせ時に技術サポートを提供する</li>
+            </ul>
+
+            <h2>3. マルチプレイヤーとネットワーク通信</h2>
+
+            <h3>3.1 サーバー接続</h3>
+            <p>対戦モードをプレイする際、ゲームはRender.comでホストされている当社のマルチプレイヤーサーバーに接続します：</p>
+            <p><code>https://pixelate-48p5.onrender.com</code></p>
+
+            <h3>3.2 データ送信</h3>
+            <ul>
+                <li>すべてのマルチプレイヤーデータは安全なHTTPS/WSS接続で送信されます</li>
+                <li>データは業界標準のTLS/SSLプロトコルを使用して転送中に暗号化されます</li>
+                <li>永続的なプレイヤープロフィールやアカウントは作成されません</li>
+                <li>マッチデータはゲーム終了後すぐに削除されます</li>
+            </ul>
+
+            <h3>3.3 ロビーシステム</h3>
+            <p>マルチプレイヤーロビーを作成または参加する際：</p>
+            <ul>
+                <li>オプションのプレイヤー名は一時的に保存されます（マッチ中のみ）</li>
+                <li>ロビーコードはランダムに生成され、使用後に期限切れになります</li>
+                <li>チャット履歴やメッセージは保存されません</li>
+            </ul>
+
+            <h2>4. データの保存と保持</h2>
+
+            <h3>4.1 サーバーストレージ</h3>
+            <ul>
+                <li><strong>進行中のマッチ：</strong>ゲームプレイ中にサーバーメモリに保存されます</li>
+                <li><strong>保持期間：</strong>マッチ終了またはプレイヤーの切断時に自動削除</li>
+                <li><strong>長期保存なし：</strong>プレイヤー情報のデータベースは維持しません</li>
+            </ul>
+
+            <h3>4.2 ローカルストレージ</h3>
+            <ul>
+                <li><strong>ゲーム設定：</strong>サウンド設定、言語選択はデバイスにローカル保存されます</li>
+                <li><strong>シングルプレイヤー進行状況：</strong>ハイスコアとウェーブ記録がローカル保存されます</li>
+                <li><strong>お客様の管理：</strong>アプリを削除することでクリアできます</li>
+            </ul>
+
+            <h2>5. 第三者サービス</h2>
+
+            <h3>5.1 ホスティングプロバイダー</h3>
+            <p><strong>Render.com</strong> - 当社のマルチプレイヤーサーバーはRenderのインフラストラクチャでホストされています。</p>
+            <ul>
+                <li>目的：マルチプレイヤーゲームサーバーホスティングを提供</li>
+                <li>共有データ：一時的なマッチデータと接続情報</li>
+                <li>プライバシーポリシー：<a href="https://render.com/privacy" target="_blank">https://render.com/privacy</a></li>
+            </ul>
+
+            <h3>5.2 広告（Androidのみ）</h3>
+            <p><strong>Androidバージョン：</strong></p>
+            <p>PIXELATE TDのAndroidバージョンは、Google AdMobを使用して広告を表示します。AdMobは以下を収集する場合があります：</p>
+            <ul>
+                <li>パーソナライズド広告用の広告ID</li>
+                <li>デバイス情報（モデル、OSバージョン）</li>
+                <li>広告パフォーマンス用のアプリ使用データ</li>
+                <li>一般的な位置情報（国/地域レベル）用のIPアドレス</li>
+            </ul>
+            <p><strong>お客様の選択：</strong></p>
+            <ul>
+                <li>Android設定 → Google → 広告 でパーソナライズド広告をオプトアウト</li>
+                <li>AdMobプライバシーポリシー：<a href="https://support.google.com/admob/answer/6128543" target="_blank">https://support.google.com/admob/answer/6128543</a></li>
+            </ul>
+
+            <p><strong>iOS/デスクトップバージョン：</strong></p>
+            <p>iOSおよびデスクトップ（Electron）バージョンは完全に広告なしで、広告サービスを使用していません。</p>
+
+            <h3>5.3 追加の分析なし</h3>
+            <p><strong>使用していません：</strong></p>
+            <ul>
+                <li>Google Analytics、Firebase Analytics、または類似のトラッキングサービス</li>
+                <li>ソーシャルメディアSDKや共有ツール</li>
+                <li>個人データを収集するクラッシュレポートサービス</li>
+            </ul>
+
+            <h2>6. 子供のプライバシー</h2>
+            <p>PIXELATE TDは全年齢対象です。13歳未満の子供から個人情報を故意に収集することはありません。本ゲームは：</p>
+            <ul>
+                <li>アカウント作成や年齢確認を必要としません</li>
+                <li>アプリ内購入や支払い方法を含みません</li>
+                <li>チャット機能やユーザー生成コンテンツはありません</li>
+                <li><strong>Android：</strong>AdMobを通じて年齢に適した広告を表示（COPPA準拠）</li>
+                <li><strong>iOS/デスクトップ：</strong>完全に広告なし</li>
+            </ul>
+            <p><strong>保護者の方へ：</strong></p>
+            <ul>
+                <li>AdMobはAndroidでファミリー向けの広告のみを配信</li>
+                <li>デバイス設定でパーソナライズド広告を無効化できます</li>
+                <li>iOSおよびデスクトップバージョンには広告が一切ありません</li>
+            </ul>
+
+            <h2>7. お客様の権利と選択</h2>
+
+            <h3>7.1 データアクセス</h3>
+            <p>最小限の一時データのみを収集しているため、アクセスまたはエクスポートする永続的なユーザープロフィールはありません。</p>
+
+            <h3>7.2 データ削除</h3>
+            <ul>
+                <li>進行中のマッチデータ：マッチ終了時に自動削除</li>
+                <li>ローカル設定：デバイスからアプリを削除することで削除</li>
+                <li>アカウント削除不要（アカウントは作成されません）</li>
+            </ul>
+
+            <h3>7.3 オプトアウトオプション</h3>
+            <ul>
+                <li><strong>マルチプレイヤー：</strong>ソロモードをプレイすることでネットワーク接続を回避</li>
+                <li><strong>クラッシュレポート：</strong>デバイス設定で無効化（iOS：設定 → プライバシー → 解析と改善）</li>
+            </ul>
+
+            <h2>8. セキュリティ対策</h2>
+            <p>以下の方法でお客様のデータを保護します：</p>
+            <ul>
+                <li>暗号化されたネットワーク通信（HTTPS/WSS）</li>
+                <li>定期的に更新される安全なサーバーインフラストラクチャ</li>
+                <li>最小限のデータ収集という哲学</li>
+                <li>一時マッチデータの自動削除</li>
+                <li>個人情報の長期保存なし</li>
+            </ul>
+
+            <h2>9. 国際ユーザー</h2>
+            <p>PIXELATE TDは世界中で利用可能です。サーバーは米国に位置していますが：</p>
+            <ul>
+                <li>GDPR（欧州）、CCPA（カリフォルニア）および類似のプライバシー法に準拠</li>
+                <li>最小限のデータは最小限のコンプライアンス問題を意味します</li>
+                <li>個人情報の国境を越えたデータ転送はありません</li>
+            </ul>
+
+            <h2>10. 本ポリシーの変更</h2>
+            <p>以下を反映するため、本プライバシーポリシーを更新することがあります：</p>
+            <ul>
+                <li>ゲーム機能の変更</li>
+                <li>プライバシー法規制の更新</li>
+                <li>データ保護実践の改善</li>
+            </ul>
+            <p>重要な変更は以下の方法で通知されます：</p>
+            <ul>
+                <li>アプリ内通知</li>
+                <li>新しい「最終更新日」でこのページを更新</li>
+            </ul>
+
+            <h2>11. お問い合わせ</h2>
+            <p>本プライバシーポリシーに関するご質問や懸念がございましたら、お問い合わせください：</p>
+            <ul>
+                <li><strong>メール：</strong> <a href="mailto:unayung@gmail.com">unayung@gmail.com</a></li>
+                <li><strong>GitHub：</strong> <a href="https://github.com/unayung/pixelate-web/issues" target="_blank">問題を報告</a></li>
+                <li><strong>サポートページ：</strong> <a href="index.html">サポートとFAQ</a></li>
+            </ul>
+
+            <div class="highlight-box" style="margin-top: 30px;">
+                <h3>📋 要約</h3>
+                <p><strong>簡単に言うと：</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li>個人データはほとんど収集しません</li>
+                    <li>マルチプレイヤーデータは一時的で、マッチ後に削除されます</li>
+                    <li><strong>Android：</strong>AdMobを通じて広告を表示（パーソナライズド広告はオプトアウト可能）</li>
+                    <li><strong>iOS/デスクトップ：</strong>完全に広告なし</li>
+                    <li>第三者へのデータ販売なし</li>
+                    <li>ゲーム設定はお客様のデバイスに保存されます</li>
+                    <li>子供を含むすべての年齢に安全</li>
+                    <li>完全なプライバシーのためにソロモードでオフラインプレイ可能</li>
+                </ul>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="back-link">← サポートに戻る</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 PIXELATE TD. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.content').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected content
+            document.getElementById('content-' + lang).classList.add('active');
+
+            // Activate selected button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
